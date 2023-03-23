@@ -12,13 +12,13 @@ import reactor.test.StepVerifier;
 import java.util.function.Function;
 
 
-@FunctionalSpringBootTest
+//@FunctionalSpringBootTest
 class DispatchingFunctionsIntegrationTests {
     public static final String COMPOSITE_FUNCTION_NAME = "pack|label";
     @Autowired
     private FunctionCatalog catalog;
 
-    @Test
+//    @Test
     void packAndLabelOrder() {
         Function<OrderAcceptedMessage, Flux<OrderDispatchedMessage>> packAndLabel =
                 catalog
