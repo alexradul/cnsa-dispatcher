@@ -49,7 +49,7 @@ tasks.named('test') {
 }
 
 bootBuildImage {
-    imageName = "${project.name}"
+    imageName = "${project.name}-service"
     environment = ["BP_JVM_VERSION" : "17.*"]
 }
 
